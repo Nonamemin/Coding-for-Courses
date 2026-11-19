@@ -1,0 +1,9 @@
+=== Task 1: float literals ===
+auto d  = 3.14                 -> double
+auto f  = 3.14f                -> float
+auto ld = 3.14L                -> long double
+
+=== Task 2: string / char ===
+auto lit = "hello"             -> char const*
+auto ch  = 'h'                 -> char
+auto s   = std::string(...)    -> std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >
