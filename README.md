@@ -1,2 +1,26 @@
-# Coding-for-Courses
-When you add a coding，please leave a Readme.md，all the md should name properly like your
+# C++ Lambda 表达式示例
+
+本项目用于演示 C++ Lambda 表达式的基本用法，包括：
+
+- 按值捕获外部变量
+- 按引用捕获外部变量
+- 使用 `mutable` 修改按值捕获的副本
+- 将 Lambda 表达式作为 `std::sort` 的比较器
+
+## 示例内容
+
+### 1. 按值捕获
+
+使用 `[a]` 捕获变量 `a` 的副本。Lambda 内部使用的是副本，不会直接修改外部变量。
+
+### 2. 按引用捕获
+
+使用 `[&b]` 捕获变量 `b` 的引用。Lambda 内部修改 `b` 时，外部的 `b` 也会被修改。
+
+### 3. 使用 `mutable`
+
+使用 `[c] mutable` 允许修改 Lambda 内部保存的 `c` 副本，但不会影响外部的 `c`。
+
+### 4. Lambda 作为排序比较器
+
+使用 Lambda 表达式作为 `std::sort` 的第三个参数，实现整数向量的降序排序。
